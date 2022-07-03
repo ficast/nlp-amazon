@@ -13,7 +13,9 @@ Make sure to run:
     pip install -r requirements.txt
 ```
 
-_obs: Maybe you'll need to install aditional packages if you are usingGPU. Check CUDA, cuDNN section on https://www.tensorflow.org/install/pip
+_obs: Maybe you'll need to install aditional packages if you are usingGPU. Check CUDA, cuDNN section on https://www.tensorflow.org/install/pip_
 
 ## Dataset: 
 [Amazon Reviews for Sentiment Analysis](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews)
+
+_obs: Just joined both train and test datasets, and splited again in the code after some data processing in the single txt file._
