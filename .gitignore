@@ -1,1 +1,5 @@
 venv
+checkpoints
+.ipynb_checkpoints
+.amazon.ft.txt
+ds

@@ -1,21 +1,49 @@
 # Neural Network Sentiment Analysis
 
-This project was presented as an University assignment in the Big Data and Analytic Intelligence Degree at Uniasselvi - Brazil
+This project was presented as an University assignment in the Big Data and Analytic Intelligence Degree at Centro Universitário Leonardo Da Vinci - Brazil
 
-- It is highly recommended that you have a GPU.
+- It is highly recommended that you have a GPU if you want to run train scripts.
 - This code can take a while depending on the environment you're running it.
 
-Make sure to run:
+Follow the instructions here:
+
+https://www.tensorflow.org/install/pip
+
+Then 
 
 ``` 
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
+conda activate tf
 ```
-
-_obs: Maybe you'll need to install aditional packages if you are usingGPU. Check CUDA, cuDNN section on https://www.tensorflow.org/install/pip_
+If necessary you'll need to run either 
+```
+pip install <dependency>
+```
+or 
+```
+conda install <dependency>
+```
 
 ## Dataset: 
 [Amazon Reviews for Sentiment Analysis](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews)
 
 _obs: Just joined both train and test datasets, and splited again in the code after some data processing in the single txt file._
+
+### Model layers:
+![image info](./assets/model_plot.png)
+## Predict:
+
+run 
+
+```
+python3 predict.py "Comment you want to predict goes here as a python string"
+```
+
+or just
+
+```
+python3 predict.py
+```
+and it will prompt a message so you can input the comment
+
+## Use example:
+![image info](./assets/example.png)
